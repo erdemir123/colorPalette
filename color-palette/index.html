@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body >
+    
+    <p class="prgf">COLOR PALETTE</p>
+    <div class="card">
+        <div class="colorpalet" id="palet"></div>
+        <div class="colorcode" id="code">
+            <p>sadık erdemir</p>
+        </div>
+    </div>
+    <label for="button"></label>
+    <button id="button" type="submit" onclick=location.reload()>Yenile</button></label></div>
+
+
+    <script>
+        let str ="abcdef123456789"
+        let color1 ="#"
+        // function color();
+            for(i = 0; i<=5; i++){
+                color1 += str[Math.floor(Math.random()*str.length)]
+            }
+            // return color
+        document.getElementById("palet").style.backgroundColor = `${color1}`;
+        document.getElementById("code").innerText=`${color1}`;
+        document.getElementById("code").style.color=`${color1}`;
+        document.getElementById("button").style.backgroundColor=`${color1}`;
+        
+    </script>
+</body>
+</html>
